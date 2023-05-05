@@ -8,7 +8,7 @@ Main puprose here was to practice TypeScript
 
 ## Build
 
-Check on Vercel https://countries-api-gray.vercel.app/
+Check on Vercel https://gitfinder-azure.vercel.app/
 
 ## Stack
 - React (vite)
