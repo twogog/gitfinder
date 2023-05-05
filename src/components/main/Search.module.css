@@ -1,0 +1,24 @@
+.form {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.input {
+  width: 100%;
+  padding: 2rem;
+  color: var(--color);
+}
+
+.button {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  padding: 1.5rem;
+  background-color: var(--button-color);
+  cursor: pointer;
+  color: var(--color);
+}
+
+.form * {
+  border-radius: var(--el-radius);
+}

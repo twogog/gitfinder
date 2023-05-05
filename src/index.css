@@ -1,0 +1,78 @@
+:root {
+  --button-color: #0079fe;
+  --el-radius: 1rem;
+
+  --body-bg-dark: #141c2f;
+  --main-bg-dark: #1f2a48;
+  --font-color-dark: #fff;
+  --font-gray-dark: #9ba0ae;
+
+  --body-bg-light: #fff;
+  --main-bg-light: #ece4e4;
+  --font-color-light: #1f2a48;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: monospace;
+  color: var(--color);
+  background-color: var(--body-bg);
+}
+
+body[data-theme="dark"] {
+  --body-bg: var(--body-bg-dark);
+  --main-bg: var(--main-bg-dark);
+  --color: var(--font-color-dark);
+}
+
+body[data-theme="light"] {
+  --body-bg: var(--body-bg-light);
+  --main-bg: var(--main-bg-light);
+  --color: var(--font-color-light);
+}
+
+a {
+  text-decoration: none;
+}
+
+dialog {
+  margin: auto;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: var(--main-bg);
+  color: var(--color);
+  border-radius: var(--el-radius);
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 80rem;
+  margin: 0 auto;
+  height: 100vh;
+  gap: 3rem;
+}
+
+@media (max-width: 568px) {
+  body {
+    font-size: 1.2rem;
+  }
+}
